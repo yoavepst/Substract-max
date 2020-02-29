@@ -1,10 +1,12 @@
 # Substract-max
 This method is getting a String 's' alongside a char 'c' and int 'k', and returns a how many (int numbers) substring of 's' are avalible with the following contitions:
 * The substring starsts & ends with the char 'c' 
-*Between the first and last characters there is no more then int 'k' times 'c'
+* Between the first and last characters there is no more then int 'k' times 'c'
 
-public static int subStrMaxC(String s, char c, int k)
-    {
+public class Execrcise
+{
+public static int subStrMaxC(String s, char c, int k){
+    
         int count = 0;
         int MIN = 2;
 
@@ -34,4 +36,6 @@ public static int subStrMaxC(String s, char c, int k)
             return  ((k+1)*(2*c-k-2))/2; 
         }
         return 0;
+    }
+    
     }
